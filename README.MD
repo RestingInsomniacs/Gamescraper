@@ -2,13 +2,13 @@
 
 The cube coders amp server has a list of games that it can host. However, that list doesn't include a lot of information about the game which makes discovery hard. GameScraper takes the list of games that the server supports and then pulls data from steam to make discovery easier. 
 
-## Current state
+## CLI 
 
-It only scrapes the list of the generic modules and doesn't scrape the compatibility info and notes. It also doesn't automatically search for the pages of Steam pages, it simply lists them out. It's also not compiled and is just in script-form, so to open it, you need to download the Requests library and Python.
+## API (Not even alpha)
+Game scraper api breaks the cli up into a web api to make it easier to consume with UIs. 
 
-## Plans for the future. 
+## DEVELOPMENT
+scraper-api uses a dev-container to simplify development. 
 
-1. Play with current implementation
-2. Create an API that returns returns the data
-3. Create a UI that displays the data. 
-4. Extend it where it makes sense. 
+1. Open scraper-api as a dev container
+2. Run pip install  -r Requirements.txt
