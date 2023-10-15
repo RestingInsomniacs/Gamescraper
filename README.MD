@@ -11,4 +11,5 @@ Game scraper api breaks the cli up into a web api to make it easier to consume w
 scraper-api uses a dev-container to simplify development. 
 
 1. Open scraper-api as a dev container
-2. Run pip install  -r Requirements.txt
+2. install dependencies `pip install  -r Requirements.txt`
+3. Start Server `uvicorn main:app --reload`
