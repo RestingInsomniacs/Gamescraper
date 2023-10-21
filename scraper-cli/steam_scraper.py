@@ -44,6 +44,10 @@ def grab_string(text: str, starting_point: int, start_key: str, end_key: str, tr
     end = scan_string(pageStr, starting_point, end_key, trim)
     return text[beginning:end]
 
+def list_games():
+    games = amp_scraper.list_games()
+    for game in games:
+        print(game)
 
 
 inputText = input("Press Enter to Start Application:")
@@ -60,7 +64,7 @@ while inputText != "Exit" and inputText != "exit":
 
     elif inputText == "List Games" or inputText == "list games":
         print("Games:")
-        amp_scraper.list_games()
+        list_games()
         inputText = ""
 
     elif inputText == "Exit" or inputText == "exit":

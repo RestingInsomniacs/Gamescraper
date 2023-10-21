@@ -1,8 +1,0 @@
-version: '3.4'
-
-services:
-  scraperapi:
-    image: scraperapi
-    build:
-      context: .
-      dockerfile: ./Dockerfile
